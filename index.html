@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            //1. Definera variabler x, y och op och svar
+            //2. Mata in variablerna igenom prompt
+            
+            var x = prompt("Operand x");
+            var op = prompt("Operator");
+            var y = prompt("Operand y");
+            var ans;
+            
+            //3. Sätt ut vilkor för alla räknersätt
+            //4. Beräkna värdet
+            
+            if(op == "+"){
+                ans = parseInt(x) + parseInt(y);
+            }else if(op == "-"){
+                ans = x - y;
+            }else if(op == "*"){
+                ans = x * y;
+            }else if(op == "/"){
+                ans= x / y;
+            }else{
+                ans = "syntax error";
+            };
+            
+            var dec = ans.toFixed(19)
+            
+            //5. Mata ut svar.
+            
+            document.write(dec);
+            
+            
+        </script>
+    </head>
+
+
+    
+</html>
